@@ -1,0 +1,3577 @@
+{
+    "baseSymbol": "QQQ",
+    "calls": [
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00500000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "111.75",
+        "lastTimestamp": "2025-12-18T18:48:33Z",
+        "bid": "117.36",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "121.36",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 1,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00505000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "112.36",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "116.36",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00510000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "107.36",
+        "bidSize": 11,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "111.34",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00515000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "102.36",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "106.34",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00520000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "97.36",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "101.36",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00525000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "92.36",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "96.36",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00530000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "86.30",
+        "lastTimestamp": "2025-12-19T15:10:52Z",
+        "bid": "87.36",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "91.36",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 1,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00535000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "76.20",
+        "lastTimestamp": "2025-12-17T15:23:08Z",
+        "bid": "82.36",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "86.36",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 2,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00540000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "77.36",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "81.36",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00545000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "65.83",
+        "lastTimestamp": "2025-12-16T19:46:15Z",
+        "bid": "72.36",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "76.34",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 2,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00550000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "66.98",
+        "lastTimestamp": "2025-12-19T20:42:12Z",
+        "bid": "67.36",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "71.34",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 12,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00555000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "50.14",
+        "lastTimestamp": "2025-12-17T15:54:18Z",
+        "bid": "62.36",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "66.36",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 2,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00560000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "59.96",
+        "lastTimestamp": "2025-12-22T14:53:32Z",
+        "bid": "57.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "60.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 1,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00565000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "54.14",
+        "lastTimestamp": "2025-12-22T20:19:06Z",
+        "bid": "52.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "55.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 2,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00570000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "49.20",
+        "lastTimestamp": "2025-12-22T20:19:06Z",
+        "bid": "47.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "50.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 7,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00575000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "40.33",
+        "lastTimestamp": "2025-12-19T20:37:46Z",
+        "bid": "42.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "45.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 240,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00578000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "41.36",
+        "lastTimestamp": "2025-12-22T16:53:27Z",
+        "bid": "39.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "42.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 5,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00579000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "40.43",
+        "lastTimestamp": "2025-12-22T16:53:27Z",
+        "bid": "38.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "41.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 5,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00580000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "39.83",
+        "lastTimestamp": "2025-12-22T14:48:41Z",
+        "bid": "37.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "40.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 11,
+        "openInterest": 10
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00581000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "39.00",
+        "lastTimestamp": "2025-12-22T14:49:37Z",
+        "bid": "36.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "39.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 2,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00582000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "38.07",
+        "lastTimestamp": "2025-12-22T14:49:37Z",
+        "bid": "35.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "38.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 1,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00583000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "37.61",
+        "lastTimestamp": "2025-12-22T15:00:00Z",
+        "bid": "34.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "37.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 43,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00584000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "36.62",
+        "lastTimestamp": "2025-12-22T15:00:00Z",
+        "bid": "33.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "36.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 43,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00585000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "34.28",
+        "lastTimestamp": "2025-12-22T18:13:55Z",
+        "bid": "32.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "35.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 2,
+        "openInterest": 2
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00586000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "31.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "34.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00587000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "32.14",
+        "lastTimestamp": "2025-12-22T17:14:16Z",
+        "bid": "30.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "33.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 4,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00588000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "31.16",
+        "lastTimestamp": "2025-12-22T17:14:16Z",
+        "bid": "29.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "32.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 6,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00589000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "29.89",
+        "lastTimestamp": "2025-12-22T16:01:07Z",
+        "bid": "28.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "31.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 3,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00590000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "29.16",
+        "lastTimestamp": "2025-12-22T20:43:29Z",
+        "bid": "27.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "30.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 3,
+        "openInterest": 2
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00591000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "28.17",
+        "lastTimestamp": "2025-12-22T18:10:30Z",
+        "bid": "26.99",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "29.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 12,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00592000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "27.25",
+        "lastTimestamp": "2025-12-22T18:10:30Z",
+        "bid": "25.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "28.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 3,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00593000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "26.88",
+        "lastTimestamp": "2025-12-22T16:20:19Z",
+        "bid": "24.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "27.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 4,
+        "openInterest": 10
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00594000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "25.48",
+        "lastTimestamp": "2025-12-22T15:27:16Z",
+        "bid": "23.97",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "26.49",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 2,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00595000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "24.12",
+        "lastTimestamp": "2025-12-22T18:57:17Z",
+        "bid": "24.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "24.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 12,
+        "openInterest": 11
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00596000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "24.62",
+        "lastTimestamp": "2025-12-22T14:54:45Z",
+        "bid": "23.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "23.43",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 3,
+        "openInterest": 2
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00597000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "22.35",
+        "lastTimestamp": "2025-12-22T16:29:59Z",
+        "bid": "22.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "22.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 4,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00598000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "20.82",
+        "lastTimestamp": "2025-12-22T14:42:49Z",
+        "bid": "21.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "21.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 11,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00599000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "19.88",
+        "lastTimestamp": "2025-12-22T18:25:38Z",
+        "bid": "20.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "20.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 9,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00600000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "19.25",
+        "lastTimestamp": "2025-12-22T20:34:41Z",
+        "bid": "19.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "19.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 86,
+        "openInterest": 9
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00601000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "18.19",
+        "lastTimestamp": "2025-12-22T17:45:48Z",
+        "bid": "18.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "18.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 2,
+        "openInterest": 2
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00602000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "17.34",
+        "lastTimestamp": "2025-12-22T20:57:00Z",
+        "bid": "17.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "17.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 17,
+        "openInterest": 4
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00603000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "16.22",
+        "lastTimestamp": "2025-12-22T20:45:07Z",
+        "bid": "16.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "16.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 208,
+        "openInterest": 207
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00604000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "15.07",
+        "lastTimestamp": "2025-12-22T20:22:40Z",
+        "bid": "15.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "15.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 6,
+        "openInterest": 7
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00605000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "14.34",
+        "lastTimestamp": "2025-12-22T20:56:40Z",
+        "bid": "14.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "14.35",
+        "askSize": 5,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 569,
+        "openInterest": 70
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00606000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "13.13",
+        "lastTimestamp": "2025-12-22T20:50:22Z",
+        "bid": "13.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "13.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 81,
+        "openInterest": 5
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00607000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "12.40",
+        "lastTimestamp": "2025-12-22T20:57:05Z",
+        "bid": "12.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "12.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 40,
+        "openInterest": 65
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00608000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "11.42",
+        "lastTimestamp": "2025-12-22T18:44:22Z",
+        "bid": "11.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "11.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 74,
+        "openInterest": 107
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00609000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "10.30",
+        "lastTimestamp": "2025-12-22T20:43:48Z",
+        "bid": "10.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "10.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 134,
+        "openInterest": 11
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00610000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "9.45",
+        "lastTimestamp": "2025-12-22T20:55:00Z",
+        "bid": "9.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "9.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 450,
+        "openInterest": 70
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00611000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "8.38",
+        "lastTimestamp": "2025-12-22T20:57:59Z",
+        "bid": "8.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "8.38",
+        "askSize": 18,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 89,
+        "openInterest": 49
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00612000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "7.59",
+        "lastTimestamp": "2025-12-22T20:58:59Z",
+        "bid": "7.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "7.44",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 191,
+        "openInterest": 204
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00613000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "6.31",
+        "lastTimestamp": "2025-12-22T20:58:52Z",
+        "bid": "6.04",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "6.38",
+        "askSize": 18,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 1029,
+        "openInterest": 1101
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00614000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "5.32",
+        "lastTimestamp": "2025-12-22T20:59:19Z",
+        "bid": "5.20",
+        "bidSize": 20,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "5.34",
+        "askSize": 33,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 1825,
+        "openInterest": 2748
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00615000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "4.40",
+        "lastTimestamp": "2025-12-22T20:59:10Z",
+        "bid": "4.21",
+        "bidSize": 28,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "4.35",
+        "askSize": 37,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 4845,
+        "openInterest": 6946
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00616000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "3.46",
+        "lastTimestamp": "2025-12-22T20:59:23Z",
+        "bid": "3.21",
+        "bidSize": 28,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "3.44",
+        "askSize": 37,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 6218,
+        "openInterest": 6615
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00617000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "2.44",
+        "lastTimestamp": "2025-12-22T20:59:14Z",
+        "bid": "2.21",
+        "bidSize": 28,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "2.33",
+        "askSize": 37,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 20403,
+        "openInterest": 13529
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00618000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "1.39",
+        "lastTimestamp": "2025-12-22T20:59:35Z",
+        "bid": "1.20",
+        "bidSize": 37,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "1.42",
+        "askSize": 37,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 85795,
+        "openInterest": 9302
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00619000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.32",
+        "lastTimestamp": "2025-12-22T20:59:35Z",
+        "bid": "0.30",
+        "bidSize": 63,
+        "bidTimestamp": "2025-12-22T20:59:36Z",
+        "ask": "0.32",
+        "askSize": 59,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 321247,
+        "openInterest": 4862
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00620000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.02",
+        "lastTimestamp": "2025-12-22T20:59:35Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "0.01",
+        "askSize": 619,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 499170,
+        "openInterest": 9434
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00621000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:59:26Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:59:18Z",
+        "ask": "0.01",
+        "askSize": 1978,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 282618,
+        "openInterest": 9491
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00622000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:58:33Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:59:17Z",
+        "ask": "0.01",
+        "askSize": 1826,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 129202,
+        "openInterest": 3229
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00623000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:57:53Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 2068,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 97624,
+        "openInterest": 2612
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00624000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:55:01Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 2069,
+        "askTimestamp": "2025-12-22T20:58:57Z",
+        "volume": 40580,
+        "openInterest": 2889
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00625000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:58:38Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 2108,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 31813,
+        "openInterest": 3470
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00626000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:48:35Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1849,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 20148,
+        "openInterest": 1684
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00627000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:58:03Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1999,
+        "askTimestamp": "2025-12-22T20:58:57Z",
+        "volume": 6291,
+        "openInterest": 4493
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00628000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:45:03Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1862,
+        "askTimestamp": "2025-12-22T20:58:57Z",
+        "volume": 2686,
+        "openInterest": 1180
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00629000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:45:53Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1796,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 2997,
+        "openInterest": 1192
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00630000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:56:57Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:14:44Z",
+        "ask": "0.01",
+        "askSize": 1791,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 10940,
+        "openInterest": 1185
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00631000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T16:01:08Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:13:14Z",
+        "ask": "0.01",
+        "askSize": 1781,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 159,
+        "openInterest": 712
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00632000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T15:03:16Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:13:14Z",
+        "ask": "0.01",
+        "askSize": 1788,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 146,
+        "openInterest": 1821
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00633000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T18:09:56Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:14:13Z",
+        "ask": "0.01",
+        "askSize": 1781,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 9,
+        "openInterest": 186
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00634000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T14:33:07Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:14:13Z",
+        "ask": "0.01",
+        "askSize": 1781,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 7,
+        "openInterest": 689
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00635000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:45:17Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:13:41Z",
+        "ask": "0.01",
+        "askSize": 1789,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 210,
+        "openInterest": 1175
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00636000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:45:08Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:12:35Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 48,
+        "openInterest": 1093
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00637000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:50:00Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:12:34Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 80,
+        "openInterest": 1030
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00638000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T15:30:58Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:12:34Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 76,
+        "openInterest": 461
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00639000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T14:34:28Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:12:34Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 10,
+        "openInterest": 936
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00640000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:45:11Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:13:15Z",
+        "ask": "0.01",
+        "askSize": 1692,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 97,
+        "openInterest": 2246
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00641000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:45:03Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:12:35Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 4,
+        "openInterest": 331
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00642000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-19T15:57:47Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:15:00Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 5,
+        "openInterest": 98
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00643000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.05",
+        "lastTimestamp": "2025-12-19T17:17:01Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:15:00Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 1,
+        "openInterest": 33
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00644000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-18T21:14:21Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:13:15Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 337,
+        "openInterest": 332
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00645000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T18:11:59Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:13:15Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 4,
+        "openInterest": 1485
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00646000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-19T16:06:12Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:13:15Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 148,
+        "openInterest": 296
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00647000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T18:42:50Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:11:50Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 26,
+        "openInterest": 552
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00648000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-18T21:13:10Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:11:50Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 14,
+        "openInterest": 191
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00649000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-19T15:28:45Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:13:15Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 19,
+        "openInterest": 39
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00650000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T18:51:16Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-18T21:14:57Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 7,
+        "openInterest": 1574
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00655000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-18T15:42:01Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-18T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 2,
+        "openInterest": 944
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00660000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-18T20:34:27Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-18T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 139,
+        "openInterest": 231
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00665000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.03",
+        "lastTimestamp": "2025-12-22T15:08:21Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-18T21:14:24Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 1,
+        "openInterest": 1266
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00670000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-18T15:18:57Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-18T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1736,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 1,
+        "openInterest": 104
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00675000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-18T14:36:04Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-16T21:14:57Z",
+        "ask": "0.01",
+        "askSize": 1739,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 1,
+        "openInterest": 239
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00680000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-16T14:43:04Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-16T21:14:57Z",
+        "ask": "0.01",
+        "askSize": 1739,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 261,
+        "openInterest": 225
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00685000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-16T20:45:20Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-16T21:14:57Z",
+        "ask": "0.01",
+        "askSize": 1841,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 3000,
+        "openInterest": 3055
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00690000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-15T15:06:05Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-15T21:15:00Z",
+        "ask": "0.01",
+        "askSize": 1841,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 10,
+        "openInterest": 90
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00695000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.04",
+        "lastTimestamp": "2025-12-09T15:07:59Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-15T21:15:00Z",
+        "ask": "0.01",
+        "askSize": 1840,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 39,
+        "openInterest": 39
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00700000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-15T16:21:10Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-15T21:15:00Z",
+        "ask": "0.01",
+        "askSize": 1841,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 3,
+        "openInterest": 82
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00705000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-15T21:15:00Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00710000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-15T16:54:26Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-12T21:13:09Z",
+        "ask": "0.01",
+        "askSize": 1841,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 35,
+        "openInterest": 80
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00715000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-12T21:14:41Z",
+        "ask": "0.01",
+        "askSize": 1842,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00720000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-16T15:59:56Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-11T21:14:51Z",
+        "ask": "0.01",
+        "askSize": 1843,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 10,
+        "openInterest": 10
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00725000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-11T21:14:54Z",
+        "ask": "0.01",
+        "askSize": 1842,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222C00730000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T14:40:21Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-11T21:14:54Z",
+        "ask": "0.01",
+        "askSize": 1843,
+        "askTimestamp": "2025-12-22T20:59:36Z",
+        "volume": 1,
+        "openInterest": 3
+      }
+    ],
+    "puts": [
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00500000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-19T15:37:31Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-18T21:14:03Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 5,
+        "openInterest": 117
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00505000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-18T20:48:03Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:12:31Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 8,
+        "openInterest": 22
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00510000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.02",
+        "lastTimestamp": "2025-12-19T16:45:35Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:10:10Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 3,
+        "openInterest": 377
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00515000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-19T16:45:00Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:09:41Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 36,
+        "openInterest": 211
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00520000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T14:30:03Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:09:41Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 600,
+        "openInterest": 212
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00525000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-19T17:07:29Z",
+        "bid": "0.01",
+        "bidSize": 256,
+        "bidTimestamp": "2025-12-18T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 90,
+        "openInterest": 111
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00530000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T14:51:18Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:10:30Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 5,
+        "openInterest": 110
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00535000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-19T14:35:53Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:10:30Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 250,
+        "openInterest": 255
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00540000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-19T19:30:58Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:11:50Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 26,
+        "openInterest": 166
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00545000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.02",
+        "lastTimestamp": "2025-12-19T19:34:42Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:11:50Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 119,
+        "openInterest": 575
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00550000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-19T20:44:27Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:11:50Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 650,
+        "openInterest": 679
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00555000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T14:30:05Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:12:58Z",
+        "ask": "0.01",
+        "askSize": 1650,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 2,
+        "openInterest": 199
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00560000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T16:59:14Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:12:31Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 1,
+        "openInterest": 842
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00565000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T17:15:18Z",
+        "bid": "0.01",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-19T21:14:55Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 3,
+        "openInterest": 424
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00570000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T16:36:11Z",
+        "bid": "0.01",
+        "bidSize": 101,
+        "bidTimestamp": "2025-12-19T21:14:54Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 106,
+        "openInterest": 1405
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00575000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T17:40:44Z",
+        "bid": "0.01",
+        "bidSize": 962,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 239,
+        "openInterest": 1617
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00578000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.02",
+        "lastTimestamp": "2025-12-19T20:50:26Z",
+        "bid": "0.01",
+        "bidSize": 1042,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 950,
+        "openInterest": 661
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00579000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T16:49:23Z",
+        "bid": "0.01",
+        "bidSize": 1291,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 30,
+        "openInterest": 563
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00580000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:07:35Z",
+        "bid": "0.01",
+        "bidSize": 1075,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 34,
+        "openInterest": 1938
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00581000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.02",
+        "lastTimestamp": "2025-12-19T20:50:29Z",
+        "bid": "0.01",
+        "bidSize": 1273,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 541,
+        "openInterest": 224
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00582000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T14:38:20Z",
+        "bid": "0.01",
+        "bidSize": 1303,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 8,
+        "openInterest": 379
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00583000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T14:30:01Z",
+        "bid": "0.01",
+        "bidSize": 1373,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 15,
+        "openInterest": 397
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00584000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.02",
+        "lastTimestamp": "2025-12-19T21:01:34Z",
+        "bid": "0.01",
+        "bidSize": 1481,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 1322,
+        "openInterest": 681
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00585000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T18:12:15Z",
+        "bid": "0.01",
+        "bidSize": 1082,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1683,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 192,
+        "openInterest": 2872
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00586000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T14:38:28Z",
+        "bid": "0.01",
+        "bidSize": 1003,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 19,
+        "openInterest": 1491
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00587000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T18:51:16Z",
+        "bid": "0.01",
+        "bidSize": 1031,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 183,
+        "openInterest": 2276
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00588000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T19:58:45Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 104,
+        "openInterest": 423
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00589000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T14:47:08Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:58:01Z",
+        "volume": 71,
+        "openInterest": 414
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00590000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:45:29Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-19T21:14:59Z",
+        "ask": "0.01",
+        "askSize": 1618,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 9763,
+        "openInterest": 3573
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00591000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:46:49Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:58:01Z",
+        "volume": 932,
+        "openInterest": 1374
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00592000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:41:03Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:58:01Z",
+        "volume": 231,
+        "openInterest": 1210
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00593000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:50:00Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:58:01Z",
+        "volume": 2221,
+        "openInterest": 772
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00594000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T19:27:05Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1688,
+        "askTimestamp": "2025-12-22T20:58:01Z",
+        "volume": 2271,
+        "openInterest": 730
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00595000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:37:49Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:58:01Z",
+        "volume": 3839,
+        "openInterest": 7908
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00596000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T19:57:43Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:58:01Z",
+        "volume": 4842,
+        "openInterest": 1750
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00597000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T18:17:35Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1682,
+        "askTimestamp": "2025-12-22T20:58:01Z",
+        "volume": 1993,
+        "openInterest": 1718
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00598000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.08",
+        "lastTimestamp": "2025-12-22T20:50:00Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1685,
+        "askTimestamp": "2025-12-22T20:58:01Z",
+        "volume": 1353,
+        "openInterest": 2286
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00599000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:48:22Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1695,
+        "askTimestamp": "2025-12-22T20:58:01Z",
+        "volume": 3565,
+        "openInterest": 1724
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00600000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:58:44Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1800,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 8008,
+        "openInterest": 6617
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00601000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:30:54Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1800,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 2454,
+        "openInterest": 2821
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00602000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.02",
+        "lastTimestamp": "2025-12-22T20:54:40Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1837,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 3399,
+        "openInterest": 2705
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00603000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:51:59Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1800,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 3295,
+        "openInterest": 2625
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00604000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:30:54Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1800,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 5238,
+        "openInterest": 2290
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00605000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:52:18Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1806,
+        "askTimestamp": "2025-12-22T20:57:00Z",
+        "volume": 4700,
+        "openInterest": 5770
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00606000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:46:49Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1800,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 4866,
+        "openInterest": 2718
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00607000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:56:38Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1800,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 3407,
+        "openInterest": 1933
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00608000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:50:12Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1702,
+        "askTimestamp": "2025-12-22T20:58:09Z",
+        "volume": 6460,
+        "openInterest": 2465
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00609000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:58:36Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1684,
+        "askTimestamp": "2025-12-22T20:58:25Z",
+        "volume": 6286,
+        "openInterest": 3170
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00610000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:59:17Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:14Z",
+        "ask": "0.01",
+        "askSize": 1748,
+        "askTimestamp": "2025-12-22T20:59:19Z",
+        "volume": 13331,
+        "openInterest": 8815
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00611000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:59:29Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:14Z",
+        "ask": "0.01",
+        "askSize": 1684,
+        "askTimestamp": "2025-12-22T20:59:26Z",
+        "volume": 9514,
+        "openInterest": 4804
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00612000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:55:59Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:14Z",
+        "ask": "0.01",
+        "askSize": 1733,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 9572,
+        "openInterest": 4235
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00613000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:54:55Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1974,
+        "askTimestamp": "2025-12-22T20:59:34Z",
+        "volume": 13954,
+        "openInterest": 6417
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00614000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:55:46Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:57:38Z",
+        "ask": "0.01",
+        "askSize": 1724,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 20487,
+        "openInterest": 8831
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00615000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:59:00Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "0.01",
+        "askSize": 1681,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 53708,
+        "openInterest": 10744
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00616000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:59:21Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "0.01",
+        "askSize": 1708,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 56139,
+        "openInterest": 7454
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00617000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.01",
+        "lastTimestamp": "2025-12-22T20:59:01Z",
+        "bid": "0.00",
+        "bidSize": null,
+        "bidTimestamp": "2025-12-22T20:58:14Z",
+        "ask": "0.01",
+        "askSize": 528,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 157335,
+        "openInterest": 7623
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00618000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.02",
+        "lastTimestamp": "2025-12-22T20:59:25Z",
+        "bid": "0.01",
+        "bidSize": 1366,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "0.02",
+        "askSize": 633,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 268903,
+        "openInterest": 2697
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00619000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.07",
+        "lastTimestamp": "2025-12-22T20:59:34Z",
+        "bid": "0.06",
+        "bidSize": 218,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "0.07",
+        "askSize": 55,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 437889,
+        "openInterest": 766
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00620000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.70",
+        "lastTimestamp": "2025-12-22T20:59:31Z",
+        "bid": "0.60",
+        "bidSize": 40,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "0.82",
+        "askSize": 40,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 256956,
+        "openInterest": 2294
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00621000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "1.70",
+        "lastTimestamp": "2025-12-22T20:59:19Z",
+        "bid": "1.54",
+        "bidSize": 14,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "1.83",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 46147,
+        "openInterest": 256
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00622000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "2.62",
+        "lastTimestamp": "2025-12-22T20:59:23Z",
+        "bid": "2.70",
+        "bidSize": 4,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "2.90",
+        "askSize": 11,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 13114,
+        "openInterest": 377
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00623000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "3.70",
+        "lastTimestamp": "2025-12-22T20:49:16Z",
+        "bid": "3.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:33Z",
+        "ask": "3.90",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:34Z",
+        "volume": 3130,
+        "openInterest": 433
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00624000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "4.72",
+        "lastTimestamp": "2025-12-22T20:56:49Z",
+        "bid": "4.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:33Z",
+        "ask": "4.90",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 1068,
+        "openInterest": 594
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00625000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "5.60",
+        "lastTimestamp": "2025-12-22T20:59:12Z",
+        "bid": "5.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:33Z",
+        "ask": "5.83",
+        "askSize": 2,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 1219,
+        "openInterest": 555
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00626000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "6.70",
+        "lastTimestamp": "2025-12-22T20:36:58Z",
+        "bid": "6.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:33Z",
+        "ask": "6.90",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 619,
+        "openInterest": 203
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00627000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "7.80",
+        "lastTimestamp": "2025-12-22T20:52:29Z",
+        "bid": "7.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "7.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 216,
+        "openInterest": 69
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00628000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "8.62",
+        "lastTimestamp": "2025-12-22T20:58:24Z",
+        "bid": "8.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "8.87",
+        "askSize": 2,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 124,
+        "openInterest": 118
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00629000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "9.64",
+        "lastTimestamp": "2025-12-22T20:58:48Z",
+        "bid": "9.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "9.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 88,
+        "openInterest": 74
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00630000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "10.80",
+        "lastTimestamp": "2025-12-22T19:56:40Z",
+        "bid": "10.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "10.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 685,
+        "openInterest": 613
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00631000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "11.74",
+        "lastTimestamp": "2025-12-22T20:45:08Z",
+        "bid": "11.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "11.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 42,
+        "openInterest": 135
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00632000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "12.38",
+        "lastTimestamp": "2025-12-22T17:04:23Z",
+        "bid": "12.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "12.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 7,
+        "openInterest": 18
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00633000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "13.35",
+        "lastTimestamp": "2025-12-22T17:23:22Z",
+        "bid": "13.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "13.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 26,
+        "openInterest": 487
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00634000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "14.68",
+        "lastTimestamp": "2025-12-22T20:23:32Z",
+        "bid": "14.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "14.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 25,
+        "openInterest": 33
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00635000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "15.79",
+        "lastTimestamp": "2025-12-22T20:04:40Z",
+        "bid": "15.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "15.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 74,
+        "openInterest": 162
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00636000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "15.65",
+        "lastTimestamp": "2025-12-12T14:53:00Z",
+        "bid": "16.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "16.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 12,
+        "openInterest": 12
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00637000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "35.41",
+        "lastTimestamp": "2025-12-17T19:50:50Z",
+        "bid": "17.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "17.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 5,
+        "openInterest": 17
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00638000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "17.47",
+        "lastTimestamp": "2025-12-22T14:33:09Z",
+        "bid": "18.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "18.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 2,
+        "openInterest": 5
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00639000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "19.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "19.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00640000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "21.05",
+        "lastTimestamp": "2025-12-22T19:11:17Z",
+        "bid": "20.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "20.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 8,
+        "openInterest": 480
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00641000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "20.57",
+        "lastTimestamp": "2025-12-22T14:33:20Z",
+        "bid": "21.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "21.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 1,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00642000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "22.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "22.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00643000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "23.29",
+        "lastTimestamp": "2025-12-12T15:05:12Z",
+        "bid": "23.54",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:34Z",
+        "ask": "23.89",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:33Z",
+        "volume": 2,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00644000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "30.91",
+        "lastTimestamp": "2025-12-12T21:05:36Z",
+        "bid": "23.47",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "26.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 12,
+        "openInterest": 12
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00645000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "24.00",
+        "lastTimestamp": "2025-12-22T15:00:48Z",
+        "bid": "24.47",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "27.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 15,
+        "openInterest": 10
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00646000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "24.99",
+        "lastTimestamp": "2025-12-22T15:00:48Z",
+        "bid": "25.47",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "28.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 15,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00647000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "35.46",
+        "lastTimestamp": "2025-12-15T19:14:19Z",
+        "bid": "26.47",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "29.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 8,
+        "openInterest": 4
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00648000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "34.87",
+        "lastTimestamp": "2025-12-12T21:05:46Z",
+        "bid": "27.48",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "30.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 143,
+        "openInterest": 143
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00649000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "28.48",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "31.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00650000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "33.46",
+        "lastTimestamp": "2025-12-19T19:43:05Z",
+        "bid": "29.47",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "32.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 257,
+        "openInterest": 141
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00655000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "34.47",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "37.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00660000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "38.75",
+        "lastTimestamp": "2025-12-11T15:45:25Z",
+        "bid": "39.47",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "42.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 2,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00665000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "53.61",
+        "lastTimestamp": "2025-12-18T15:52:11Z",
+        "bid": "44.47",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "47.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 1,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00670000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "58.42",
+        "lastTimestamp": "2025-12-18T15:50:57Z",
+        "bid": "49.47",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "52.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 1,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00675000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "54.47",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "57.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00680000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "68.42",
+        "lastTimestamp": "2025-12-15T15:19:44Z",
+        "bid": "59.47",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "62.00",
+        "askSize": 1,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 1,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00685000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "74.00",
+        "lastTimestamp": "2025-12-16T21:03:58Z",
+        "bid": "63.62",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "67.64",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 2,
+        "openInterest": 1
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00690000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "68.62",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "72.64",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00695000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "73.62",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "77.64",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00700000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "78.62",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "82.64",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00705000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "83.62",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "87.64",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00710000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "88.62",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "92.64",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00715000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "95.72",
+        "lastTimestamp": "2025-12-22T20:39:02Z",
+        "bid": "93.62",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "97.64",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 6,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00720000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "100.68",
+        "lastTimestamp": "2025-12-22T20:39:02Z",
+        "bid": "98.62",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "102.64",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 6,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00725000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "103.62",
+        "bidSize": 10,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "107.64",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 0,
+        "openInterest": 0
+      },
+      {
+        "instrument": {
+          "symbol": "QQQ251222P00730000",
+          "type": "OPTION"
+        },
+        "outcome": "SUCCESS",
+        "last": "0.00",
+        "lastTimestamp": "2025-12-22T05:00:00Z",
+        "bid": "108.62",
+        "bidSize": 1,
+        "bidTimestamp": "2025-12-22T20:59:35Z",
+        "ask": "112.64",
+        "askSize": 10,
+        "askTimestamp": "2025-12-22T20:59:35Z",
+        "volume": 0,
+        "openInterest": 0
+      }
+    ]
+  }
