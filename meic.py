@@ -7,7 +7,12 @@ from dataclasses import dataclass, field
 import time
 from typing import List, Optional
 import re
-from datetime import date
+from datetime import date, datetime, timedelta, time as dt_time
+
+import pytz
+
+
+
 
 # LOAD ENV Variables
 load_dotenv()
@@ -304,6 +309,12 @@ class IronCondor:
     short_put_greeks: Greeks
     long_put_symbol: str
 
+class LastTrade:
+    def __init__(self):
+        self.count = 0
+        self.timestamp = None
+        self.last_symbol = None
+
 
 def get_quote(instrument: Instrument, account_id: str, api_key: str) -> Quote:
     url = f"https://api.public.com/userapigateway/marketdata/{account_id}/quotes"
@@ -415,7 +426,7 @@ def get_short_strike(option_chain: OptionChain, option_type: str, starting_index
         strike = parse_option_symbol(option_strike.instrument.symbol)['strike']
         # print(f"Fetching greeks for {option_type} at strike {strike}")
         greeks = get_greeks(option_strike.instrument.symbol, ACCOUNT_ID, API_KEY)        
-        if abs(greeks.delta) > .10 and max_search >= 0:
+        if abs(greeks.delta) > .125 and max_search >= 0:
             # print(f"{option_type} {strike}: delta too large at {abs(greeks.delta)}")            
             keep_searching = True
             i += (1*scaling_factor)
@@ -553,9 +564,8 @@ def get_account_portfolio(account_id: str, api_key: str) -> Portfolio:
     return Portfolio.from_dict(data)
 
 
-def get_iron_condor(ticker: Instrument, account_id: str, api_key: str, today: str) -> IronCondor:
-    ticker_quote = get_quote(ticker, account_id, api_key)
-    print(f"{ticker_quote.instrument.symbol}: last price {ticker_quote.last}")
+def get_iron_condor(ticker: Instrument, account_id: str, api_key: str, today: str, ticker_quote) -> IronCondor:
+    
     ticker_option_chain = get_option_chain(ticker, account_id, api_key, today)
     
     # starting roughly in the middle of the options chain
@@ -586,6 +596,14 @@ def get_iron_condor(ticker: Instrument, account_id: str, api_key: str, today: st
     iron_condor = IronCondor(long_call_symbol = long_call_symbol, short_call_greeks = call_greeks, short_put_greeks = put_greeks, long_put_symbol = long_put_symbol)
     return iron_condor
 
+
+pst = pytz.timezone("US/Pacific")
+
+def is_within_trading_hours(now: datetime) -> bool: 
+    start = dt_time(6, 32) # 6:32 AM 
+    end = dt_time(12, 59) # 11:00 AM 
+    return start <= now.time() <= end
+
 ticker = Instrument('SPY','EQUITY')
 EXPECTED_MOVE = 2
 today = "2025-12-24" #date.today().strftime("%Y-%m-%d")
@@ -593,26 +611,46 @@ print(f"Starting 0 DTE trading for {today}")
 # default timing
 sleep = 20
 options_position_summary = OptionsPositionSummary()
-for i in range(1):
+last_trade = LastTrade()
 
+for i in range(30):
+    ticker_quote = get_quote(ticker, account_id, api_key)
+    print(f"{ticker_quote.instrument.symbol}: last price {ticker_quote.last}")
     # get portfolio info
     portfolio_account = get_account_portfolio(ACCOUNT_ID, API_KEY)
     portfolio_account.sort_positons()
     options_position_summary = portfolio_account.evaluate_option_positions(options_position_summary)
     if options_position_summary.positions_at_risk > 0:
-        # if we have positions as risk (85% or greater loss), check more frequently
+        # if we have positions as risk (85% or greater loss), check live data more frequently
         sleep = 10
     else:
         sleep = 20
 
-    # check option positions, see if any are at negative 100%
-    print(portfolio_account)
+    now = datetime.now(pst)
+    should_trade = False
 
-    iron_condor = get_iron_condor(ticker, ACCOUNT_ID, API_KEY, today)
-    print(f"Short Call strike {iron_condor.short_call_greeks.symbol} at delta of {iron_condor.short_call_greeks.delta} Long: {iron_condor.long_call_symbol}")
-    #run_trade_pre_flight(ACCOUNT_ID, API_KEY, short_call_symbol, long_call_symbol, 1, 1.0, "CALL")
-    print(f"Short PUT strike {iron_condor.short_put_greeks.symbol} at delta of {iron_condor.short_put_greeks.delta} Long: {iron_condor.long_put_symbol}")
-    #run_trade_pre_flight(ACCOUNT_ID, API_KEY, short_put_symbol, long_put_symbol, 1, 1.0, "PUT")
+    if last_trade.count == 0:
+        # first trade of the day, good luck!
+        should_trade = True
+    else:
+        time_diff = now - last_trade.timestamp
+        if time_diff >= timedelta(minutes=15) and last_trade.count < 4:
+            should_trade = True
+
+
+    if should_trade and is_within_trading_hours(now):
+        print("Entering Trade")
+        if 1 == 0:
+            iron_condor = get_iron_condor(ticker, ACCOUNT_ID, API_KEY, today, ticker_quote)
+            print(f"Short Call strike {iron_condor.short_call_greeks.symbol} at delta of {iron_condor.short_call_greeks.delta} Long: {iron_condor.long_call_symbol}")
+            run_trade_pre_flight(ACCOUNT_ID, API_KEY, short_call_symbol, long_call_symbol, 1, 1.0, "CALL")
+            print(f"Short PUT strike {iron_condor.short_put_greeks.symbol} at delta of {iron_condor.short_put_greeks.delta} Long: {iron_condor.long_put_symbol}")
+            run_trade_pre_flight(ACCOUNT_ID, API_KEY, short_put_symbol, long_put_symbol, 1, 1.0, "PUT")
+            enter_call_spreads(ACCOUNT_ID, API_KEY, iron_condor.short_call_greeks.symbol,iron_condor.long_call_symbol, 1.0)
+            enter_call_spreads(ACCOUNT_ID, API_KEY, iron_condor.short_put_greeks.symbol,iron_condor.long_put_symbol, 1.05)
+
+        last_trade.count += 1
+        last_trade.timestamp = now
 
 
 
