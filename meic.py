@@ -3,7 +3,7 @@ import os
 import logging
 from dotenv import load_dotenv, dotenv_values
 import json
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import time
 from typing import List, Optional
 import re
@@ -23,6 +23,22 @@ from typing import List, Optional
 # -----------------------------
 # Supporting nested structures
 # -----------------------------
+@dataclass
+class OptionsPositionSummary:
+    positions_at_risk: int = 0
+    put_spreads_entered: int = 0
+    call_spreads_entered: int = 0
+    put_spreads_closed: int = 0
+    call_spreads_closed: int = 0
+
+@dataclass
+class Instrument:
+    symbol: str
+    type: str
+
+    @staticmethod 
+    def from_dict(d: dict) -> "Instrument": 
+        return Instrument( symbol=d["symbol"], type=d["type"])
 
 @dataclass
 class BuyingPower:
@@ -123,7 +139,6 @@ class PortfolioPosition:
             instrument=Instrument(
                 symbol=d["instrument"]["symbol"],
                 type=d["instrument"]["type"],
-                name=d["instrument"]["name"]
             ),
             quantity=float(d["quantity"]),
             openedAt=d["openedAt"],
@@ -148,8 +163,8 @@ class Portfolio:
     equity: List[EquitySlice]
     positions: List[PortfolioPosition]
     orders: List[dict]
-    stock_positions: List[PortfolioPosition]
-    option_positions: List[PortfolioPosition]   
+    stock_positions: List[PortfolioPosition] = field(default_factory=list)
+    option_positions: List[PortfolioPosition] = field(default_factory=list)  
 
     @staticmethod
     def from_dict(d: dict) -> "Portfolio":
@@ -173,6 +188,32 @@ class Portfolio:
             elif position.instrument.type == "OPTION":
                 self.option_positions.append(position)
 
+    def evaluate_option_positions(self, options_position_summary: OptionsPositionSummary) -> OptionsPositionSummary:
+        """Return all option positions with a loss of 90% or more.
+        If a position is at a 100% loss or worse, automatically close the spread.
+        """
+        options_position_summary.positions_at_risk = 0
+        for position in self.option_positions:
+            loss_pct = position.instrumentGain.gainPercentage
+
+            # 100% loss or worse → auto-close
+            if loss_pct <= -100.0:
+                self.close_spread(position)
+                if parse_option_symbol(position.instrument.symbol)['type'] == 'C':
+                    call_spreads_closed += 1
+                else:
+                    put_spreads_closed += 1
+
+
+            # 85% loss or worse → include in results
+            if loss_pct <= -85.0:
+                options_position_summary.positions_at_risk = 1
+
+        return options_position_summary
+
+    def close_spread(self, position: PortfolioPosition) -> None:
+        print("Closing Position")
+
 
 @dataclass
 class Greeks:
@@ -192,7 +233,7 @@ class Greeks:
         g = greeks["greeks"]
 
         return Greeks(
-            symbol=greeks["symbol"],
+            symbol= "".join(greeks["symbol"].split()),
             delta=float(g["delta"]),
             gamma=float(g["gamma"]),
             theta=float(g["theta"]),
@@ -206,15 +247,7 @@ class Greeks:
 class Position:
     instrument: Instrument
 
-@dataclass
-class Instrument:
-    symbol: str
-    type: str
-    name: str
 
-    @staticmethod 
-    def from_dict(d: dict) -> "Instrument": 
-        return Instrument( symbol=d["symbol"], type=d["type"])
 
 @dataclass
 class Quote:
@@ -263,6 +296,13 @@ class OptionChain:
             puts=[Quote.from_dict(q) for q in d["puts"]],
             call_strikes_count = len(d["calls"]),
             put_strikes_count = len(d["calls"]) )
+
+@dataclass
+class IronCondor:
+    long_call_symbol: str
+    short_call_greeks: Greeks
+    short_put_greeks: Greeks
+    long_put_symbol: str
 
 
 def get_quote(instrument: Instrument, account_id: str, api_key: str) -> Quote:
@@ -324,7 +364,7 @@ def parse_option_symbol(symbol: str):
     underlying, date, cp_flag, strike = match.groups()
 
     return {
-        "symbol": symbol,
+        "symbol": "".join(symbol.split()),
         "underlying": underlying,
         "expiration": date,
         "type": cp_flag,
@@ -508,18 +548,15 @@ def get_account_portfolio(account_id: str, api_key: str) -> Portfolio:
         "Content-Type": "application/json"
     }
 
-    response = requests.get(url, headers=headers)
+    response = r.get(url, headers=headers)
     data = response.json()
     return Portfolio.from_dict(data)
 
-ticker = Instrument('SPY','EQUITY')
-EXPECTED_MOVE = 2
-today = "2025-12-24" #date.today().strftime("%Y-%m-%d")
-print(f"Starting 0 DTE trading for {today}")
-for i in range(1):
-    ticker_quote = get_quote(ticker, ACCOUNT_ID, API_KEY)
+
+def get_iron_condor(ticker: Instrument, account_id: str, api_key: str, today: str) -> IronCondor:
+    ticker_quote = get_quote(ticker, account_id, api_key)
     print(f"{ticker_quote.instrument.symbol}: last price {ticker_quote.last}")
-    ticker_option_chain = get_option_chain(ticker, ACCOUNT_ID, API_KEY, today)
+    ticker_option_chain = get_option_chain(ticker, account_id, api_key, today)
     
     # starting roughly in the middle of the options chain
     atm_call_index = get_atm_strike_index("CALL", ticker_quote.last, ticker_option_chain, 62) #62 #qqq_option_chain.call_strikes_count // 2
@@ -542,13 +579,43 @@ for i in range(1):
     short_put_symbol = ticker_option_chain.calls[put_greeks.index].instrument.symbol
     long_put_symbol = ticker_option_chain.calls[put_greeks.index - 2].instrument.symbol
 
-    print(f"Short Call strike {call_greeks.symbol} at delta of {call_greeks.delta} || Short: {short_call_symbol} Long: {long_call_symbol}")
+    #assert call_greeks.symbol != short_call_symbol, f"ERROR: CALL {repr(call_greeks.symbol)} != {repr(short_call_symbol)}"
+
+    #assert put_greeks.symbol != short_put_symbol, f"ERROR: PUT {repr(put_greeks.symbol)} != {repr(short_put_symbol)}"
+
+    iron_condor = IronCondor(long_call_symbol = long_call_symbol, short_call_greeks = call_greeks, short_put_greeks = put_greeks, long_put_symbol = long_put_symbol)
+    return iron_condor
+
+ticker = Instrument('SPY','EQUITY')
+EXPECTED_MOVE = 2
+today = "2025-12-24" #date.today().strftime("%Y-%m-%d")
+print(f"Starting 0 DTE trading for {today}")
+# default timing
+sleep = 20
+options_position_summary = OptionsPositionSummary()
+for i in range(1):
+
+    # get portfolio info
+    portfolio_account = get_account_portfolio(ACCOUNT_ID, API_KEY)
+    portfolio_account.sort_positons()
+    options_position_summary = portfolio_account.evaluate_option_positions(options_position_summary)
+    if options_position_summary.positions_at_risk > 0:
+        # if we have positions as risk (85% or greater loss), check more frequently
+        sleep = 10
+    else:
+        sleep = 20
+
+    # check option positions, see if any are at negative 100%
+    print(portfolio_account)
+
+    iron_condor = get_iron_condor(ticker, ACCOUNT_ID, API_KEY, today)
+    print(f"Short Call strike {iron_condor.short_call_greeks.symbol} at delta of {iron_condor.short_call_greeks.delta} Long: {iron_condor.long_call_symbol}")
     #run_trade_pre_flight(ACCOUNT_ID, API_KEY, short_call_symbol, long_call_symbol, 1, 1.0, "CALL")
-    print(f"Short PUT strike {put_greeks.symbol} at delta of {put_greeks.delta} || Short: {short_put_symbol} Long: {long_put_symbol} ")
+    print(f"Short PUT strike {iron_condor.short_put_greeks.symbol} at delta of {iron_condor.short_put_greeks.delta} Long: {iron_condor.long_put_symbol}")
     #run_trade_pre_flight(ACCOUNT_ID, API_KEY, short_put_symbol, long_put_symbol, 1, 1.0, "PUT")
 
 
-    sleep = 15
+
     for i in range(sleep,0,-1):
         if i % 3 == 0:
             print(f"New data in {i} seconds")
