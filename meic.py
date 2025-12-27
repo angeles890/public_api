@@ -29,6 +29,13 @@ from typing import List, Optional
 # Supporting nested structures
 # -----------------------------
 @dataclass
+class CreditSpread:
+    short_symbol: str
+    long_symbol: str
+    quantity: str
+    limit_price: float
+
+@dataclass
 class OptionsPositionSummary:
     positions_at_risk: int = 0
     put_spreads_entered: int = 0
@@ -169,7 +176,8 @@ class Portfolio:
     positions: List[PortfolioPosition]
     orders: List[dict]
     stock_positions: List[PortfolioPosition] = field(default_factory=list)
-    option_positions: List[PortfolioPosition] = field(default_factory=list)  
+    option_positions: List[PortfolioPosition] = field(default_factory=list)
+    spreads_sold: List[CreditSpread] = field(default_factory=list)  
 
     @staticmethod
     def from_dict(d: dict) -> "Portfolio":
@@ -304,10 +312,8 @@ class OptionChain:
 
 @dataclass
 class IronCondor:
-    long_call_symbol: str
-    short_call_greeks: Greeks
-    short_put_greeks: Greeks
-    long_put_symbol: str
+    call_credit_spread: CreditSpread
+    put_credit_spread: CreditSpread
 
 class LastTrade:
     def __init__(self):
@@ -551,6 +557,46 @@ def run_trade_pre_flight(account_id: str, api_key: str,  short_symbol: str, long
 
     print(data)
 
+def execute_multi_leg_trade(account_id: str, api_key: str, short_symbol: str, long_symbol: str, quantity: int, limit_price: float) -> str:
+    url = f"https://api.public.com/userapigateway/trading/{account_id}/order/multileg"
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    }
+
+    request_body = {
+        "orderId": "1e54604f-9ed0-48b5-a018-bc08c717a456",
+        "quantity": quantity,
+        "type": "LIMIT",
+        "limitPrice": limit_price,
+        "expiration": {
+            "timeInForce": "DAY"
+        },
+        "legs": [
+            {
+                "instrument": {
+                "symbol": long_symbol,
+                "type": "OPTION"
+                },
+                "side": "BUY",
+                "openCloseIndicator": "OPEN",
+                "ratioQuantity": 1
+            },
+            {
+                "instrument": {
+                "symbol": short_symbol,
+                "type": "OPTION"
+                },
+                "side": "SELL",
+                "openCloseIndicator": "OPEN",
+                "ratioQuantity": 1
+            }
+        ]
+    }
+
+    response = r.post(url, headers=headers, json=request_body)
+    data = response.json()
+    return data
 
 def get_account_portfolio(account_id: str, api_key: str) -> Portfolio:
     url = f"https://api.public.com/userapigateway/trading/{account_id}/portfolio/v2"
@@ -584,16 +630,19 @@ def get_iron_condor(ticker: Instrument, account_id: str, api_key: str, today: st
     put_greeks = get_short_strike(ticker_option_chain, "PUT", atm_put_index, EXPECTED_MOVE)
 
     # we are trading 2 dollar wide spreads so...
-    short_call_symbol = ticker_option_chain.calls[call_greeks.index].instrument.symbol
+    #short_call_symbol = ticker_option_chain.calls[call_greeks.index].instrument.symbol
     long_call_symbol = ticker_option_chain.calls[call_greeks.index + 2].instrument.symbol
-    short_put_symbol = ticker_option_chain.calls[put_greeks.index].instrument.symbol
+    #short_put_symbol = ticker_option_chain.calls[put_greeks.index].instrument.symbol
     long_put_symbol = ticker_option_chain.calls[put_greeks.index - 2].instrument.symbol
 
     #assert call_greeks.symbol != short_call_symbol, f"ERROR: CALL {repr(call_greeks.symbol)} != {repr(short_call_symbol)}"
 
     #assert put_greeks.symbol != short_put_symbol, f"ERROR: PUT {repr(put_greeks.symbol)} != {repr(short_put_symbol)}"
 
-    iron_condor = IronCondor(long_call_symbol = long_call_symbol, short_call_greeks = call_greeks, short_put_greeks = put_greeks, long_put_symbol = long_put_symbol)
+    call_credit_spread = CreditSpread(short_symbol=call_greeks.symbol, long_symbol=long_call_symbol, quantity=1, limit_price= MINIMUM_CREDIT)
+    put_credit_spread = CreditSpread(short_symbol = put_greeks.symbol, long_symbol = long_put_symbol, quantity = 1, limit_price = MINIMUM_CREDIT)
+
+    iron_condor = IronCondor(call_credit_spread=call_credit_spread, put_credit_spread=put_credit_spread)
     return iron_condor
 
 
@@ -606,15 +655,18 @@ def is_within_trading_hours(now: datetime) -> bool:
 
 ticker = Instrument('SPY','EQUITY')
 EXPECTED_MOVE = 2
+MAX_OPEN_POSITIONS = 1
 today = "2025-12-24" #date.today().strftime("%Y-%m-%d")
 print(f"Starting 0 DTE trading for {today}")
 # default timing
-sleep = 20
+sleep = 15
 options_position_summary = OptionsPositionSummary()
 last_trade = LastTrade()
+# negative for credits, positive for debits
+MINIMUM_CREDIT = -0.91
 
 for i in range(30):
-    ticker_quote = get_quote(ticker, account_id, api_key)
+    ticker_quote = get_quote(ticker, ACCOUNT_ID, API_KEY)
     print(f"{ticker_quote.instrument.symbol}: last price {ticker_quote.last}")
     # get portfolio info
     portfolio_account = get_account_portfolio(ACCOUNT_ID, API_KEY)
@@ -622,9 +674,9 @@ for i in range(30):
     options_position_summary = portfolio_account.evaluate_option_positions(options_position_summary)
     if options_position_summary.positions_at_risk > 0:
         # if we have positions as risk (85% or greater loss), check live data more frequently
-        sleep = 10
+        sleep = 5
     else:
-        sleep = 20
+        sleep = 15
 
     now = datetime.now(pst)
     should_trade = False
@@ -634,20 +686,28 @@ for i in range(30):
         should_trade = True
     else:
         time_diff = now - last_trade.timestamp
-        if time_diff >= timedelta(minutes=15) and last_trade.count < 4:
+        # if it's been 15 min since last position, and we have less than max position count
+        if time_diff >= timedelta(minutes=15) and last_trade.count < MAX_OPEN_POSITIONS:
             should_trade = True
 
 
-    if should_trade and is_within_trading_hours(now):
+    if should_trade:
         print("Entering Trade")
-        if 1 == 0:
+        if is_within_trading_hours(now):
             iron_condor = get_iron_condor(ticker, ACCOUNT_ID, API_KEY, today, ticker_quote)
-            print(f"Short Call strike {iron_condor.short_call_greeks.symbol} at delta of {iron_condor.short_call_greeks.delta} Long: {iron_condor.long_call_symbol}")
-            run_trade_pre_flight(ACCOUNT_ID, API_KEY, short_call_symbol, long_call_symbol, 1, 1.0, "CALL")
-            print(f"Short PUT strike {iron_condor.short_put_greeks.symbol} at delta of {iron_condor.short_put_greeks.delta} Long: {iron_condor.long_put_symbol}")
-            run_trade_pre_flight(ACCOUNT_ID, API_KEY, short_put_symbol, long_put_symbol, 1, 1.0, "PUT")
-            enter_call_spreads(ACCOUNT_ID, API_KEY, iron_condor.short_call_greeks.symbol,iron_condor.long_call_symbol, 1.0)
-            enter_call_spreads(ACCOUNT_ID, API_KEY, iron_condor.short_put_greeks.symbol,iron_condor.long_put_symbol, 1.05)
+            #print(f"Short Call strike {iron_condor.short_call_greeks.symbol} at delta of {iron_condor.short_call_greeks.delta} Long: {iron_condor.long_call_symbol}")
+            run_trade_pre_flight(ACCOUNT_ID, API_KEY, iron_condor.call_credit_spread.short_symbol, iron_condor.call_credit_spread.long_symbol, iron_condor.call_credit_spread.quantity, iron_condor.call_credit_spread.limit_price, "CALL")
+            #print(f"Short PUT strike {iron_condor.short_put_greeks.symbol} at delta of {iron_condor.short_put_greeks.delta} Long: {iron_condor.long_put_symbol}")
+            run_trade_pre_flight(ACCOUNT_ID, API_KEY, iron_condor.put_credit_spread.short_symbol, iron_condor.put_credit_spread.long_symbol, iron_condor.put_credit_spread.quantity, iron_condor.put_credit_spread.limit_price, "PUT")
+            
+            # sell call credit spread
+            execute_multi_leg_trade(ACCOUNT_ID, API_KEY, iron_condor.call_credit_spread.short_symbol, iron_condor.call_credit_spread.long_symbol, iron_condor.call_credit_spread.quantity, iron_condor.call_credit_spread.limit_price)
+            # sell put credit spread
+            execute_multi_leg_trade(ACCOUNT_ID,API_KEY, iron_condor.put_credit_spread.short_symbol, iron_condor.put_credit_spread.long_symbol, iron_condor.put_credit_spread.quantity, iron_condor.put_credit_spread.limit_price)
+
+            # add to portfolio as spread to close later if needed
+            portfolio_account.spreads_sold.append(iron_condor.call_credit_spread)
+            portfolio_account.spreads_sold.append(iron_condor.put_credit_spread)
 
         last_trade.count += 1
         last_trade.timestamp = now
