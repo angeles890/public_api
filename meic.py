@@ -8,6 +8,8 @@ import time
 from typing import List, Optional
 import re
 from datetime import date, datetime, timedelta, time as dt_time
+import uuid
+
 
 import pytz
 
@@ -564,10 +566,10 @@ def execute_multi_leg_trade(account_id: str, api_key: str, short_symbol: str, lo
         "Content-Type": "application/json"
     }
     print(f"Shorting {short_symbol}")
-    print(f"")
+    print(f"Buying {long_symbol}")
 
     request_body = {
-        "orderId": "1e54604f-9ed0-48b5-a018-bc08c717a456",
+        "orderId": str(uuid.uuid4()),
         "quantity": quantity,
         "type": "LIMIT",
         "limitPrice": limit_price,
@@ -598,6 +600,7 @@ def execute_multi_leg_trade(account_id: str, api_key: str, short_symbol: str, lo
 
     response = r.post(url, headers=headers, json=request_body)
     data = response.json()
+    print(data)
     return data
 
 def get_account_portfolio(account_id: str, api_key: str) -> Portfolio:
@@ -635,7 +638,7 @@ def get_iron_condor(ticker: Instrument, account_id: str, api_key: str, today: st
     #short_call_symbol = ticker_option_chain.calls[call_greeks.index].instrument.symbol
     long_call_symbol = ticker_option_chain.calls[call_greeks.index + 2].instrument.symbol
     #short_put_symbol = ticker_option_chain.calls[put_greeks.index].instrument.symbol
-    long_put_symbol = ticker_option_chain.calls[put_greeks.index - 2].instrument.symbol
+    long_put_symbol = ticker_option_chain.puts[put_greeks.index - 2].instrument.symbol
 
     #assert call_greeks.symbol != short_call_symbol, f"ERROR: CALL {repr(call_greeks.symbol)} != {repr(short_call_symbol)}"
 
@@ -656,7 +659,7 @@ def is_within_trading_hours(now: datetime) -> bool:
     return start <= now.time() <= end
 
 ticker = Instrument('SPY','EQUITY')
-EXPECTED_MOVE = 1
+EXPECTED_MOVE = 2
 MAX_OPEN_POSITIONS = 1
 today = "2025-12-30" #date.today().strftime("%Y-%m-%d")
 print(f"Starting 0 DTE trading for {today}")
@@ -665,7 +668,7 @@ sleep = 15
 options_position_summary = OptionsPositionSummary()
 last_trade = LastTrade()
 # negative for credits, positive for debits
-MINIMUM_CREDIT = -0.09
+MINIMUM_CREDIT = -0.20
 
 for i in range(1):
     ticker_quote = get_quote(ticker, ACCOUNT_ID, API_KEY)
