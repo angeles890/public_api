@@ -563,6 +563,8 @@ def execute_multi_leg_trade(account_id: str, api_key: str, short_symbol: str, lo
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
+    print(f"Shorting {short_symbol}")
+    print(f"")
 
     request_body = {
         "orderId": "1e54604f-9ed0-48b5-a018-bc08c717a456",
@@ -654,18 +656,18 @@ def is_within_trading_hours(now: datetime) -> bool:
     return start <= now.time() <= end
 
 ticker = Instrument('SPY','EQUITY')
-EXPECTED_MOVE = 2
+EXPECTED_MOVE = 1
 MAX_OPEN_POSITIONS = 1
-today = "2025-12-24" #date.today().strftime("%Y-%m-%d")
+today = "2025-12-30" #date.today().strftime("%Y-%m-%d")
 print(f"Starting 0 DTE trading for {today}")
 # default timing
 sleep = 15
 options_position_summary = OptionsPositionSummary()
 last_trade = LastTrade()
 # negative for credits, positive for debits
-MINIMUM_CREDIT = -0.91
+MINIMUM_CREDIT = -0.09
 
-for i in range(30):
+for i in range(1):
     ticker_quote = get_quote(ticker, ACCOUNT_ID, API_KEY)
     print(f"{ticker_quote.instrument.symbol}: last price {ticker_quote.last}")
     # get portfolio info
